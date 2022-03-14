@@ -9,13 +9,13 @@ Estaba explorando diferentes métodos para evadir los motores AV que serán úti
 ¡NO SOY RESPONSABLE DEL MAL USO QUE LE PUEDAN DAR! ⚠️
 
 This server 
-[![server.png](img/Screenshot_3.png)](img/Screenshot_3.png)
+[![server.png](img/server.png)](img/server.png)
 
 Trafic TCP Encrypted Whit AES
-[![Screenshot-3.png](https://i.postimg.cc/vmrckn0p/Screenshot-3.png)](https://postimg.cc/94fmqD5p)
+[![Screenshot-3.png](img/vmrckn0p/Screenshot-3.png)](img/vmrckn0p/Screenshot-3.png)
 
 Ratio Detection ScanTime
-[![Screenshot-4.png](https://i.postimg.cc/9FbCqpr8/Screenshot-4.png)](https://postimg.cc/jLDGpy6P)
+[![Screenshot-4.png](img/Screenshot-4.png)](img/Screenshot-4.png)
 
 
 ## Caracteristicas  
