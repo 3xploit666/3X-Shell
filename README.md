@@ -2,7 +2,7 @@
 this simple proyect RevShell  TCP encrypted data Aes 
 
 Description 
-I was exploring different methods to evade AV engines which will be helpful during Pen-testing Engagements. Since most of the malware's are written on C#, C++ and python(Because it supports cross-platform).Most of the PowerShell and DDE injection methods were detected with AV solution so I taught of giving a try with golang because Go has many features such as concurrency and also its compiled to machine code so it has good performance.
+Estaba explorando diferentes métodos para evadir los motores AV que serán útiles durante los Compromisos de prueba de penetración. Dado que la mayoría de los programas maliciosos están escritos en C#, C++ y python (porque admite multiplataforma). La mayoría de los métodos de inyección de PowerShell y DDE se detectaron con la solución AV, así que enseñé a intentarlo con golang porque Go tiene muchas características como como concurrencia y también está compilado en código máquina por lo que tiene un buen rendimiento.
 
 This server 
 [![server.png](https://i.postimg.cc/sxK1nRDq/server.png)](https://postimg.cc/GT8c2VDx)
