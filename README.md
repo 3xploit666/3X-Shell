@@ -12,10 +12,10 @@ This server
 [![server.png](img/server.png)](img/server.png)
 
 Trafic TCP Encrypted Whit AES
-[![Screenshot-3.png](img/vmrckn0p/Screenshot-3.png)](img/vmrckn0p/Screenshot-3.png)
+[![Screenshot-3.png](img/Screenshot_3.png)](img/Screenshot_3.png)
 
 Ratio Detection ScanTime
-[![Screenshot-4.png](img/Screenshot-4.png)](img/Screenshot-4.png)
+[![Screenshot-4.png](img/Screenshot_4.png)](img/Screenshot_4.png)
 
 
 ## Caracteristicas  
