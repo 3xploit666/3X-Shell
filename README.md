@@ -7,5 +7,9 @@ Estaba explorando diferentes métodos para evadir los motores AV que serán úti
 This server 
 [![server.png](https://i.postimg.cc/sxK1nRDq/server.png)](https://postimg.cc/GT8c2VDx)
 
+Trafic TCP Encrypted Whit AES
+[![Screenshot-3.png](https://i.postimg.cc/vmrckn0p/Screenshot-3.png)](https://postimg.cc/94fmqD5p)
+
 Ratio Detection ScanTime
 [![Screenshot-4.png](https://i.postimg.cc/9FbCqpr8/Screenshot-4.png)](https://postimg.cc/jLDGpy6P)
+
