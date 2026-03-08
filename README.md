@@ -1,33 +1,93 @@
+<div align="center">
+
 # 3X-Shell
-this simple proyect RevShell  TCP encrypted data Aes 
-## poc https://youtu.be/ydqtXE37Hb8
 
-## Description
-Estaba explorando diferentes métodos para evadir los motores AV que serán útiles durante los Compromisos de prueba de penetración. Dado que la mayoría de los programas maliciosos están escritos en C#, C++ y python (porque admite multiplataforma). La mayoría de los métodos de inyección de PowerShell y DDE se detectaron con la solución AV, así que enseñé a intentarlo con golang porque Go tiene muchas características como como concurrencia y también está compilado en código máquina por lo que tiene un buen rendimiento.
+**AES-Encrypted TCP Reverse Shell**
 
-## Disclaimer!!!  
-⚠️ TODO mi contenido publicado se realiza con fines educativos, informativos y éticos.
-¡NO SOY RESPONSABLE DEL MAL USO QUE LE PUEDAN DAR! ⚠️
+[![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://golang.org/)
+[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-This server 
+*A Go-based reverse shell with AES-encrypted TCP communications for penetration testing*
+
+[Demo Video](https://youtu.be/ydqtXE37Hb8)
+
+</div>
+
+---
+
+## Overview
+
+**3X-Shell** is a reverse shell written in Go that encrypts all TCP traffic using AES symmetric encryption. By using Go instead of traditional C#/C++/Python payloads, it achieves significantly lower detection rates against AV engines while maintaining native performance through compiled machine code.
+
+## Features
+
+- **AES-Encrypted Traffic** — All C2 communications are encrypted with AES symmetric encryption
+- **Low Detection Rate** — 2/40 on ScanTime (as of March 2022)
+- **Screenshot Capture** — Remote screenshot functionality
+- **Cross-Platform Server** — Listener works on Windows and Linux
+- **Native Binary** — Compiled Go binary, no interpreter needed
+- **No External Dependencies** — Pure Go implementation
+
+## Detection Rate
+
+| Scanner | Result | Date |
+|---------|--------|------|
+| ScanTime | **2/40** bypass | March 2022 |
+
+## Screenshots
+
+**Server Listener:**
+
 [![server.png](img/server.png)](img/server.png)
 
-Trafic TCP Encrypted Whit AES
+**Encrypted TCP Traffic (AES):**
+
 [![Screenshot-3.png](img/Screenshot_3.png)](img/Screenshot_3.png)
 
-Ratio Detection ScanTime
+**Detection Rate:**
+
 [![Screenshot-4.png](img/Screenshot_4.png)](img/Screenshot_4.png)
 
+## Build
 
-## Caracteristicas  
-* Trafico cifrado en aes simetrico
-* bypass avs ratio 2/40 Bypass 13/03/2022
-* captura pantalla
-* servidor multiplataforma
-* nativo
+```bash
+# Build the server
+go build -o server ./server/
 
-### Implementaciones Futuras  
-* multistager
-* persistencia 
-* inyeccion shellcode
-* recolect info
+# Build the client (implant)
+go build -ldflags "-s -w" -o client ./client/
+```
+
+## Usage
+
+```bash
+# Start the listener
+./server -p 4444
+
+# Execute the client on the target
+.\client.exe
+```
+
+## Roadmap
+
+- [ ] Multi-stage payload delivery
+- [ ] Persistence mechanisms
+- [ ] Shellcode injection
+- [ ] System information collection
+
+## Legal Disclaimer
+
+> **This tool is intended for authorized penetration testing and security research only.** Unauthorized access to computer systems is illegal. Always obtain proper written authorization before testing. The author assumes no liability for misuse of this software.
+
+## Author
+
+**[@3xploit666](https://github.com/3xploit666)**
+
+---
+
+<div align="center">
+
+*For educational and authorized security testing purposes only.*
+
+</div>
